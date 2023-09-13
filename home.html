@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
    <style>
     .summary{
               background-color: bisque;
               color: blue;
+              font-family: 'Roboto', sans-serif;
+              text-transform: uppercase;
+              letter-spacing: 3px;
+             
     }
     #angular{
              color: chartreuse;
@@ -16,6 +23,9 @@
     .professionalSummary{
                           background-color: aqua;
                           color: darkgoldenrod;
+    }
+    #summaryList{
+      font-family: 'Poppins', sans-serif;
     }
    </style>
 
@@ -26,7 +36,7 @@
 
       <p>TO WORK IN ORGANIZATION WHERE I CAN LEARN AND GROW MY SKILLS AND HELPS  ORGANIZATIONAL GROWTH </p>
       <h2 class="summary">Professional Summery</h2>
-      <ul type="square">
+      <ul id="summaryList">
         <li>Having 1 years of experience in developing Single page WebApplications using <span id="angular">Angular 8</span>, HTML5, CSS3, Bootstrap 5, JavaScript,TypeScript</li>
         <br />
         <li class="professionalSummary"> Experience on working with version control system - GIT and GitHub </li>
