@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Registration Form</title>
+    <link rel="shortcut icon" href="developer.png" type="image/x-icon" />
+    <style>
+         label{
+          color: blue;
+         }
+
+       input[type="text"]{
+        color: brown;
+        text-transform:capitalize;
+        border-color: bisque;
+       }
+       button[type="reset"]:hover{
+        color: cadetblue;
+
+       }
+     button[type="submit"]:hover{
+        color: cadetblue;
+       }
+       #formHeading:hover{
+        color: cadetblue;
+       }
+
+    </style>
+  </head>
+  <body>
+    <h2 id="formHeading">Employee Registration Form</h2>
+    <fieldset>
+        <legend>Employee Registration Form</legend>
+    
+    <table>
+      <tbody>
+        <form>
+          <tr>
+            <td><label for="">First Name</label></td>
+            <td> <input type="text" autofocus maxlength="12" placeholder="only first name" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for=""> Your Last Name </label></td>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for=""> Mobile</label></td>
+            <td><input type="number" required /></td>
+          </tr>
+          <tr>
+            <td><label for=""> Email</label></td>
+            <td>
+              <input type="email" required placeholder="Ex.abc@gmail.com" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for=""> Password</label></td>
+            <td><input type="password" /></td>
+          </tr>
+          <tr>
+            <td><label for=""> Select Gender </label></td>
+            <td>
+              <input type="radio" name="gender" /> <label for=""> Male</label>
+              <input type="radio" name="gender" /> <label for=""> Female</label>
+              <input type="radio" name="gender" /> <label for=""> Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for=""> Select your tech stack </label></td>
+            <td>
+              <input type="checkbox" /> <label for="">HTML & CSS </label>
+              <input type="checkbox" /> <label for="">JavaScript</label>
+              <input type="checkbox" /> <label for="">Bootstrap</label>
+              <input type="checkbox" /> <label for="">React</label>
+              <input type="checkbox" /> <label for="">Angular</label>
+            </td>
+          </tr>
+          <tr>
+            <td> <label for="">Upload Mark sheets</label> </td>
+            <td> <input type="file" multiple>  </td>
+        </tr>
+
+        <tr>
+            <td><label for="">Upload Profile Photo</label></td>
+            <td> <input type="file"> </td>
+        </tr>
+        <tr>
+            <td><label for="">Data Of Birth</label></td>
+            <td> <input type="date"> </td>
+        </tr>
+          <tr>
+            <td><label for="">Select State</label></td>
+            <td>
+              <select>
+                <option value="MH">Maharashtra</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Rajstan">Rajstan</option>
+                <option value="AP">AP</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Country</label></td>
+            <td><input type="text" value="India" readonly disabled /></td>
+          </tr>
+          <tr>
+            <td><label for="">Permanent Address</label></td>
+            <td><textarea cols="30" rows="10"></textarea></td>
+          </tr>
+          <tr>
+            <td><button type="reset">Reset</button></td>
+            <td><button type="submit">Submit</button></td>
+          </tr>
+        </form>
+      </tbody>
+    </table>
+</fieldset>
+  </body>
+</html>
